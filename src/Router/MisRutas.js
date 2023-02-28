@@ -16,6 +16,7 @@ function MisRutas() {
             <HeaderNav/>
 
             {/* CONTENIDO CENTRAL*/}
+            <section className='content'>    
             <Routes>
                 <Route path='/' element={<Inicio/>} />
                 <Route path='/inicio' element={<Inicio/>} />
@@ -24,8 +25,7 @@ function MisRutas() {
                 <Route path='/curriculum' element={<Curriculum/>} />
                 <Route path='/contacto' element={<Contacto/>} />
             </Routes>
-
-            <hr></hr>
+            </section>
             {/* FOOTER O PIE DE PAGINA*/}
             <Footer/>
             
