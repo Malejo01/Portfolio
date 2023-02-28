@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, Routes, BrowserRouter, NavLink} from 'react-router-dom'
+import {Route, Routes, BrowserRouter, Navigate} from 'react-router-dom'
 import Contacto from '../components/Contacto'
 import Curriculum from '../components/Curriculum'
 import Inicio from '../components/Inicio'
@@ -18,7 +18,7 @@ function MisRutas() {
             {/* CONTENIDO CENTRAL*/}
             <section className='content'>    
             <Routes>
-                <Route path='/' element={<Inicio/>} />
+                <Route path='/' element={<Navigate to='/inicio'/>} />
                 <Route path='/inicio' element={<Inicio/>} />
                 <Route path='/portfolio' element={<Portfolio/>} />
                 <Route path='/servicios' element={<Servicios/>} />

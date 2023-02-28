@@ -74,7 +74,7 @@ code {
   text-decoration: none;
   transition: all 250ms;
 }
-
+.header .active,
 .header a:hover{
   color: #fa4529;
 }

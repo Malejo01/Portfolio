@@ -12,19 +12,19 @@ function HeaderNav() {
         <nav>
             <ul>
                 <li>
-                    <NavLink to="/inicio">Inicio</NavLink>
+                    <NavLink to="/inicio" className={({isActive}) => isActive ? "active" : ""}>Inicio</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/portfolio">Portfolio</NavLink>
+                    <NavLink to="/portfolio" className={({isActive}) => isActive ? "active" : ""}>Portfolio</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/servicios">Servicios</NavLink>
+                    <NavLink to="/servicios" className={({isActive}) => isActive ? "active" : ""}>Servicios</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/curriculum">Curriculum</NavLink>
+                    <NavLink to="/curriculum" className={({isActive}) => isActive ? "active" : ""}>Curriculum</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contacto">Contacto</NavLink>
+                    <NavLink to="/contacto" className={({isActive}) => isActive ? "active" : ""}>Contacto</NavLink>
                 </li>
             </ul>
         </nav>
