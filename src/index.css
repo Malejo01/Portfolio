@@ -90,8 +90,8 @@ code {
   border-top: 3px solid black;
   padding-top: 45px;
   background: #f5f5f5;
-  min-height: 150px;
-  line-height: 100px;
+  min-height: 50px;
+  line-height: 20px;
   color: #444;
 }
 
@@ -110,7 +110,6 @@ code {
 .home h2 {
   color: rgb(97, 97, 97);
   font-weight: lighter;
-
 }
 
 .home a {
@@ -122,9 +121,7 @@ code {
   transition: 250ms all;
 }
 
-.home a:hover {
-  background-color: rgb(26, 137, 26);
-}
+
 
 .page .heading,
 .home .heading{
@@ -140,9 +137,47 @@ code {
   font-weight: 600;
 }
 
+form{
+  display: block;
+  
+}
+
 .home p{
   color: rgb(97, 97, 97);
   font-size: 20px;
   font-style: italic;
+}
 
+input[type="text"],
+textarea{
+  display: block;
+  padding: 15px;
+  width: 37rem;
+  margin: 20px 0px;
+}
+
+textarea{
+  min-height: 200px;
+}
+
+input[type="submit"],
+button{
+  width: 200px;
+  font-size: 16px;
+  padding: 15px 0px;
+  margin-top: 15px;
+  cursor: pointer;
+
+  border: 0px;
+  color: white;
+  background-color: #fa4529;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 250ms all;}
+
+
+.home a:hover,
+input[type="submit"]:hover,
+button:hover{
+  background-color: rgb(26, 137, 26);
 }

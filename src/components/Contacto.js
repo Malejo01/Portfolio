@@ -9,8 +9,8 @@ function Contacto() {
                 <input type="text" placeholder='Apellido'/>
                 <input type="text" placeholder='Email'/>
                 <textarea placeholder='Motivo de contacto'/>
-                <input type="submit" value='Enviar'/ >
-            </form>
+                <input type="submit" value='Enviar'/>
+        </form>
     </div> 
     )
 }
