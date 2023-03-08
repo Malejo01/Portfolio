@@ -6,6 +6,7 @@ import Inicio from '../components/Inicio'
 import Footer from '../components/Layout/Footer'
 import HeaderNav from '../components/Layout/HeaderNav'
 import Portfolio from '../components/Portfolio'
+import Proyecto from '../components/Proyecto'
 import Servicios from '../components/Servicios'
 
 
@@ -24,6 +25,7 @@ function MisRutas() {
                 <Route path='/servicios' element={<Servicios/>} />
                 <Route path='/curriculum' element={<Curriculum/>} />
                 <Route path='/contacto' element={<Contacto/>} />
+                <Route path='/proyecto/:id' element={<Proyecto/>} />
                 <Route path="*" element={
                     <div className='page'>
                         <h1 className='heading'>Error 404 Page not Found</h1>
