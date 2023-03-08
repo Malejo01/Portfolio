@@ -14,7 +14,7 @@ function Portfolio() {
                             <img src={"/images/"+trabajo.id+".png"} alt="imagen del proyecto"></img>
                         </div>
                         <span>{trabajo.categorias}</span>
-                        <h2><Link to={trabajo.url}>{trabajo.nombre}</Link></h2>
+                        <h2><Link to={"/proyecto/"+trabajo.id}>{trabajo.nombre}</Link></h2>
                         <h3>{trabajo.tecnologias}</h3>
                     </article>
                 ))
