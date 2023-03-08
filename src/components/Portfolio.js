@@ -6,16 +6,20 @@ function Portfolio() {
     return (
         <div className='page'>
         <h1 className='heading'>Portfolio</h1>
-
-        {
-            trabajos.map(trabajo => (
-                <article key={trabajo.id}>
-                    <span>{trabajo.categorias}</span>
-                    <h2><Link to={"/proyecto/"+trabajo.id}>{trabajo.nombre}</Link></h2>
-                    <h3>{trabajo.tecnologias}</h3>
-                </article>
-            ))
-        }
+        <section className='works'>
+            {
+                trabajos.map(trabajo => (
+                    <article className='work-item' key={trabajo.id}>
+                        <div className='mask'>
+                            <img src={"/images/"+trabajo.id+".png"} alt="imagen del proyecto"></img>
+                        </div>
+                        <span>{trabajo.categorias}</span>
+                        <h2><Link to={trabajo.url}>{trabajo.nombre}</Link></h2>
+                        <h3>{trabajo.tecnologias}</h3>
+                    </article>
+                ))
+            }
+        </section>
         </div>
     )
 }
