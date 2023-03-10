@@ -26,11 +26,8 @@ function MisRutas() {
                 <Route path='/curriculum' element={<Curriculum/>} />
                 <Route path='/contacto' element={<Contacto/>} />
                 <Route path='/proyecto/:id' element={<Proyecto/>} />
-                <Route path="*" element={
-                    <div className='page'>
-                        <h1 className='heading'>Error 404 Page not Found</h1>
-                    </div>
-                    }/>
+                <Route path='*' element={<Inicio/>} />
+                
             </Routes>
             </section>
             {/* FOOTER O PIE DE PAGINA*/}
